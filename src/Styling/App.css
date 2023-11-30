@@ -8,6 +8,7 @@ body {
   padding: 0;
   font-family: 'Shadows Into Light', cursive;
   color: rgb(235, 169, 234);
+  text-align: center; 
 }
 
 header {

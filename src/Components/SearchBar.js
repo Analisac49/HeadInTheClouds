@@ -16,48 +16,23 @@ const SearchBar = ({ onSearch }) => {
     <div className="search-bar-container">
       <label>
         Search Query:
-        <input
-          type="text"
-          value={searchQuery}
-          onChange={(e) => setSearchQuery(e.target.value)}
-          placeholder="Enter search query"
-        />
+        <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
       </label>
       <label>
         Genre:
-        <input
-          type="text"
-          value={genre}
-          onChange={(e) => setGenre(e.target.value)}
-          placeholder="Enter genre"
-        />
+        <input type="text" value={genre} onChange={(e) => setGenre(e.target.value)} />
       </label>
       <label>
         Release Year:
-        <input
-          type="text"
-          value={releaseYear}
-          onChange={(e) => setReleaseYear(e.target.value)}
-          placeholder="Enter release year"
-        />
+        <input type="text" value={releaseYear} onChange={(e) => setReleaseYear(e.target.value)} />
       </label>
       <label>
         Min Rating:
-        <input
-          type="text"
-          value={minRating}
-          onChange={(e) => setMinRating(e.target.value)}
-          placeholder="Enter min rating"
-        />
+        <input type="text" value={minRating} onChange={(e) => setMinRating(e.target.value)} />
       </label>
       <label>
         Max Rating:
-        <input
-          type="text"
-          value={maxRating}
-          onChange={(e) => setMaxRating(e.target.value)}
-          placeholder="Enter max rating"
-        />
+        <input type="text" value={maxRating} onChange={(e) => setMaxRating(e.target.value)} />
       </label>
       <button onClick={handleSearch}>Search</button>
     </div>

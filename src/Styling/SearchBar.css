@@ -7,6 +7,7 @@
   
   label {
     margin: 10px 0;
+    text-align: center; 
   }
   
   input {
@@ -20,6 +21,7 @@
     background-color: #bb00ff;
     color: #fff;
     cursor: pointer;
+    text-align: center; 
   }
   
   button:hover {
