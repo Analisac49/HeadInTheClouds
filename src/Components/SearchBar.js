@@ -14,7 +14,6 @@ const SearchBar = ({ onSearch }) => {
 
   return (
     <div className="search-bar-container">
-      {/* Search input fields and buttons */}
       <label>
         Search Query:
         <input
