@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SearchBar from './Components/SearchBar';
+import ShowList from './Components/ShowList';
+import { searchTVShows } from './utils/tmdbAPI';
+import './Styling/App.css';
 
-function App() {
+const App = () => {
+  const [searchResults, setSearchResults] = useState([]);
+
+  const handleSearch = async (query, genre, releaseYear, minRating, maxRating) => {
+    try {
+      const results = await searchTVShows(query, genre, releaseYear, minRating, maxRating);
+      setSearchResults(results);
+    } catch (error) {
+      console.error(error.message);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <h1>Welcome to Amelody's Head In The Clouds</h1>
       </header>
+
+      <div>
+        <SearchBar onSearch={handleSearch} />
+        {searchResults.length > 0 && <ShowList shows={searchResults} />}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
