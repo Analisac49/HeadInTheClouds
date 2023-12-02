@@ -12,10 +12,7 @@ Users can easily search for their favorite movies and TV shows to access detaile
 ### `2. Filtering Options:`
 The app provides filtering options based on genres, release years, and user ratings, enabling users to refine their search results.
 
-### `3. Platform Selection:`
-Users can choose specific streaming platforms to see the availability of content on their preferred services.
-
-### `4. Dynamic User Interface:`
+### `3. Dynamic User Interface:`
 The app features a dynamic and responsive user interface for a seamless browsing experience.
 
 ## How It Works:
