@@ -1,4 +1,4 @@
-# Amelody's Head in the Clouds
+# Head in the Clouds
 
 ## Streaming Guide React App
 

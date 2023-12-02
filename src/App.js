@@ -19,7 +19,7 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1>Welcome to Amelody's Head In The Clouds</h1>
+        <h1>Welcome to Head In The Clouds</h1>
       </header>
       <div>
         <SearchBar onSearch={handleSearch} />
