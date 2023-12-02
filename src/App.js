@@ -21,7 +21,6 @@ const App = () => {
       <header>
         <h1>Welcome to Amelody's Head In The Clouds</h1>
       </header>
-
       <div>
         <SearchBar onSearch={handleSearch} />
         {searchResults.length > 0 && <ShowList shows={searchResults} />}
